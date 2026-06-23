@@ -1,0 +1,623 @@
+/* Page Container Styles */
+.page-container {
+  min-height: 100vh;
+  padding: 100px 20px 40px;
+  background-color: var(--color-bg);
+}
+
+/* About Us Page Styles */
+.about-page .hero-section {
+  text-align: center;
+  padding: 60px 0;
+  background: linear-gradient(135deg, var(--color-primary-glow) 0%, var(--color-success-glow) 100%);
+  border-radius: 16px;
+  margin-bottom: 60px;
+}
+
+.about-page .hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-success) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-page .hero-subtitle {
+  font-size: 20px;
+  color: var(--color-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.story-section,
+.mission-section {
+  margin-bottom: 80px;
+}
+
+.story-content,
+.mission-content {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.story-content h2,
+.mission-content h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-success) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.story-content p,
+.mission-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+}
+
+.values-section,
+.stats-section,
+.team-section {
+  margin-bottom: 80px;
+}
+
+.values-section h2,
+.stats-section h2,
+.team-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-success) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.value-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 20px var(--color-primary-glow);
+  transform: translateY(-4px);
+}
+
+.value-icon {
+  font-size: 48px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.value-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.stat-item {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 20px var(--color-primary-glow);
+  transform: translateY(-4px);
+}
+
+.stat-item svg {
+  font-size: 40px;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.stat-item h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.stat-item p {
+  font-size: 16px;
+  color: var(--color-muted);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.team-member {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.team-member:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 20px var(--color-primary-glow);
+  transform: translateY(-4px);
+}
+
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-success) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-on-primary);
+  margin: 0 auto 20px;
+}
+
+.team-member h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.member-role {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.member-bio {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+/* Contact Page Styles */
+.contact-page .hero-section {
+  text-align: center;
+  padding: 60px 0;
+  background: linear-gradient(135deg, var(--color-primary-glow) 0%, var(--color-success-glow) 100%);
+  border-radius: 16px;
+  margin-bottom: 60px;
+}
+
+.contact-page .hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-success) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-page .hero-subtitle {
+  font-size: 20px;
+  color: var(--color-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section {
+  margin-bottom: 80px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-info {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.contact-info h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-success) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-info p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-muted);
+  margin-bottom: 32px;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-method {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.contact-icon {
+  font-size: 24px;
+  color: var(--color-primary);
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.contact-method h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.contact-method p {
+  font-size: 14px;
+  color: var(--color-muted);
+  margin-bottom: 4px;
+}
+
+.contact-form-container {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form-icon {
+  font-size: 48px;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.form-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.form-header p {
+  font-size: 16px;
+  color: var(--color-muted);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: var(--color-text);
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary-glow);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-muted);
+}
+
+.faq-section {
+  margin-bottom: 80px;
+}
+
+.faq-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-success) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+.faq-item {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 15px var(--color-primary-glow);
+}
+
+.faq-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.faq-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+/* Privacy Policy Page Styles */
+.privacy-page .hero-section {
+  text-align: center;
+  padding: 60px 0;
+  background: linear-gradient(135deg, var(--color-primary-glow) 0%, var(--color-success-glow) 100%);
+  border-radius: 16px;
+  margin-bottom: 60px;
+}
+
+.privacy-page .hero-content {
+  position: relative;
+}
+
+.hero-icon {
+  font-size: 64px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.privacy-page .hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-success) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.privacy-page .hero-subtitle {
+  font-size: 20px;
+  color: var(--color-muted);
+  max-width: 600px;
+  margin: 0 auto 12px;
+}
+
+.last-updated {
+  font-size: 14px;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+.policy-section {
+  margin-bottom: 80px;
+}
+
+.policy-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.policy-intro,
+.policy-section-item {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 32px;
+}
+
+.policy-section-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.section-icon {
+  font-size: 32px;
+  color: var(--color-primary);
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.policy-intro h2,
+.policy-section-item h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-success) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.policy-intro p,
+.policy-section-item p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-muted);
+  margin-bottom: 16px;
+}
+
+.subsection {
+  margin-bottom: 24px;
+}
+
+.subsection h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.subsection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.subsection li {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-muted);
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.subsection li::before {
+  content: "•";
+  color: var(--color-primary);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.contact-info {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  color: var(--color-muted);
+  margin-bottom: 8px;
+}
+
+.contact-info strong {
+  color: var(--color-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .policy-section-item {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .about-page .hero-content h1,
+  .contact-page .hero-content h1,
+  .privacy-page .hero-content h1 {
+    font-size: 36px;
+  }
+  
+  .values-grid,
+  .stats-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
